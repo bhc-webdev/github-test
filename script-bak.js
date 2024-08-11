@@ -15,7 +15,7 @@ async function fetchWeatherData(location) {
     try {
         // TODO: Fetch data from the API using async/await
         // Hint: Use the fetch() method and await its response
-        const response = await fetch(url);
+        
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -24,8 +24,8 @@ async function fetchWeatherData(location) {
     } catch (error) {
         // TODO: Handle errors gracefully
         // Hint: Log the error to the console and rethrow it
-        console.error('Fetching weather data failed:', error);
-        throw error;
+        
+        
     }
 }
 
@@ -33,11 +33,10 @@ async function fetchWeatherData(location) {
 function displayWeatherData(data) {
     // TODO: Update the DOM with weather data
     // Hint: Use document.getElementById() to select the element and update its innerHTML
-    const currentCondition = data.current_condition[0];
-    document.getElementById('weatherData').innerHTML = `
-        <p>Temperature: ${currentCondition.temp_C}°C</p>
-        <p>Weather: ${currentCondition.weatherDesc[0].value}</p>
-    `;
+    
+
+    
+    
 }
 
 // Function: Get Weather
@@ -45,12 +44,12 @@ async function getWeather(location) {
     try {
         // TODO: Fetch weather data and display it
         // Hint: Call fetchWeatherData() and displayWeatherData()
-        const weatherData = await fetchWeatherData(location);
-        displayWeatherData(weatherData);
+        
+        
     } catch (error) {
         // TODO: Display an error message in the DOM
         // Hint: Use document.getElementById() to select the element and update its innerHTML
-        document.getElementById('weatherData').innerHTML = '<p>Error fetching weather data. Please try again.</p>';
+
     }
 }
 
