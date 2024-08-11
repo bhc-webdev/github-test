@@ -1,4 +1,3 @@
-# Unit 5: Asynchronous JavaScript
+# JavaScript Test Files
 
-Here, students learn about handling asynchronous operations using callbacks, promises, and async/await. This unit requires a solid understanding of functions and error handling.
-Project: Weather Dashboard
+GitHub pages test area for JavaScript class.
